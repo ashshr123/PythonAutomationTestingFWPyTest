@@ -2,6 +2,9 @@ from Config.TestData import TestData
 from Pages.BasePage import BasePage
 from selenium.webdriver.common.by import By
 
+from Pages.SearchPage import SearchPage
+
+
 class HomePage(BasePage):
 
     SEARCHBOX=(By.XPATH,"//*[@id='twotabsearchtextbox']")
@@ -19,6 +22,7 @@ class HomePage(BasePage):
           self.do_send_keys(self.SEARCHBOX,"Apple Ipad Mini")
     def click_searchbtn_home(self):
           self.do_click(self.SEARCHBUTTON)
+          return SearchPage(self.driver)
 
     def verify_title_home(self):
         return self.get_title(TestData.TITLE)
