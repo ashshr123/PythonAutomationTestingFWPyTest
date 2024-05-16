@@ -20,3 +20,5 @@ class HomePage(BasePage):
     def click_searchbtn_home(self):
           self.do_click(self.SEARCHBUTTON)
 
+    def verify_title_home(self):
+        return self.get_title(TestData.TITLE)
