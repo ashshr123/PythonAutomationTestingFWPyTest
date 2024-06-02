@@ -2,16 +2,20 @@
 
 This repository contains an automation testing framework for testing the Amazon.in website using Selenium and PyTest in Python. The framework follows the Page Object Model (POM) design pattern for better test maintenance and readability.
 
-## Project Structure
+SearchPage.py
+Defines the SearchPage class for interactions with the search results page on Amazon.in.
 
-automation_framework/
-│
-├── pages/
-│ ├── home_page.py
-│ └── search_page.py
-│
-├── tests/
-│ ├── test_home_page.py
-│ └── test_search_page.py
-│
-├── conftest.py
+
+### Directory and File Descriptions
+
+#### `Config/`
+
+Contains final key words , values and URL's
+
+#### `Pages/`
+
+Contains the Page Object Model (POM) classes for the web pages under test.
+
+#### `Tests/`
+Contains the test cases.
+
