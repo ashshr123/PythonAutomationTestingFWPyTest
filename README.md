@@ -26,4 +26,4 @@ Configuration and fixtures for PyTest.
 ### Running the Tests
 To run the tests, use the following command in bash:
 pytest tests/
-Alternatively can use configured IDE with Python, Selenium and PyTest for same
+\nAlternatively can use configured IDE with Python, Selenium and PyTest for same
