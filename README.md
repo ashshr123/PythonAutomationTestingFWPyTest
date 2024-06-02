@@ -1,4 +1,6 @@
-# Automation Testing Framework for Amazon.in using Selenium and PyTest
+# Python Automation Testing Framework with Selenium and PyTest
+
+This repository contains an automation testing framework for testing the Amazon.in website using Selenium and PyTest in Python. The framework follows the Page Object Model (POM) design pattern for better test maintenance and readability.
 
 ## Project Structure
 
@@ -13,4 +15,3 @@ automation_framework/
 │ └── test_search_page.py
 │
 ├── conftest.py
-├── pytest.ini
