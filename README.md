@@ -19,25 +19,11 @@ Contains the Page Object Model (POM) classes for the web pages under test.
 Contains the test cases.
 
 #### `conftest.py`
-
-'''python
-import pytest
-from selenium import webdriver
-
-from Config.TestData import TestData
-
-
-@pytest.fixture(params=[TestData.BROWSER], scope='class')
-def init_driver(request):
-    if request.param == "chrome":
-        chrome_options = webdriver.ChromeOptions()
-        driver_path = TestData.DRIVER_PATH
-        web_driver = webdriver.Chrome(options=chrome_options)
-    if request.param == "safari":
-        web_driver = webdriver.Safari()
-    request.cls.driver = web_driver
-    yield
-    web_driver.quit()'''
+Configuration and fixtures for PyTest.
 
 
 
+### Running the Tests
+To run the tests, use the following command in bash:
+pytest tests/
+Alternatively can use configured IDE with Python, Selenium and PyTest for same
